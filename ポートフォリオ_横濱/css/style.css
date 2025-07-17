@@ -1,0 +1,603 @@
+
+@charset "utf-8";
+/* CSS Document */
+@import url("common.css");
+body {
+	width: 100%;
+	font-family: 'Crimson Text', serif;
+}
+div#container {
+	width: 100%;
+	display: flex;
+}
+html {
+            scroll-behavior: smooth;
+        }
+.sidebar {
+	background-color: #F6E7ED;
+	width: 20%;
+	position: relative;
+}
+h1 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.sidebar h1 img {
+	width: 170px;
+	height: 170px;
+	position: fixed;
+}
+nav ul{
+	margin: 40px 0 0 70px;
+	padding: 200px 0 0 0;
+	list-style-type: none;
+	position: fixed;
+}
+nav ul li {
+	padding: 0 0 30px 0; 
+	font-size: 125%;
+}
+nav ul li a {
+	text-decoration-line: none;
+	color: #000000;
+font-family: "DM Serif Display", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+h6 {
+	height: 360px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: "DM Serif Display", serif;
+	font-size: 100px;
+	font-weight: 1000;
+  	font-style: normal;
+	letter-spacing: 5px;
+	color: #ffffff;
+}
+.butterfly {
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	animation: flutter 10s infinite ease-in-out;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.butterfly img {
+	width: 300px; /* 横幅を調整 */
+	height: auto; /* 高さは自動で */
+	filter: drop-shadow(0 0 10px white);
+}
+@keyframes flutter {
+	0% { transform: translate(0, 0) rotate(0deg); }
+	25% { transform: translate(-5px, -8px) rotate(-3deg); }
+	50% { transform: translate(5px, -12px) rotate(5deg); }
+	75% { transform: translate(-3px, 0px) rotate(-5deg); }
+	100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-1.6deg);
+  }
+  50% {
+    transform:translate(-1px, -1px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(1.6deg);
+  }
+}
+p {
+	font-family: "Noto Serif JP", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: #5F5F5F;
+	margin:  30px;
+}
+ 
+#main {
+	background: linear-gradient(to right,#FAC0C1,#FECCFF);
+	background-repeat: repeat-y;
+	padding-left: 30px;
+	width: 80%;
+}
+
+/*フェード*/
+h5,#sirokuma_box,#coffeecan_box,#sanfes_box,#ehon_box,#wing_box {
+	animation: slideIn 5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+/*フェードここまで*/
+h5 img {
+	width: 950px;
+	padding-top: 50px;
+}
+#profile_box {
+	width: 800px;
+	margin-top: 50px;
+}
+section#skill_box {
+	margin-top :80px;
+}
+section#opus_box {
+	margin-top :80px;
+}
+section#contact_box {
+	margin-top :80px;
+}
+#graphic_box {
+	margin-top: 40px;
+}
+#web_box {
+	margin-top: 80px;
+}
+#database_box {
+	margin-top: 80px;
+}
+h2 {
+	  font-family: "DM Serif Display", serif;
+	  font-weight: 400;
+	  font-style: italic;
+	  color: #674636;
+	  font-size: 210%;
+	  margin: 0 60px 30px 30px;
+}
+
+h3 {
+	  font-family: "Noto Serif JP", serif;
+	  font-optical-sizing: auto;
+	  font-style: normal;
+	  margin-left: 30px;
+}
+#graphic_box p,#web_box p,#database_box p {
+	 margin-top: -10px;
+	padding: 0;
+}
+.a_box,.b_box,.c_box,.d_box,.e_box,.f_box {
+	background-color: #F7F7F7;
+	width: 250px;
+	height: 200px;
+	margin: 15px;
+}
+.hover10 {
+	transition: all 0.6s ease 0s;
+}
+.hover10:hover {
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+}
+.a_box {
+	margin: 15px 15px 15px 40px;
+}
+.a_box img {
+	width: 200px;
+	padding: 40px 15px 20px 25px;
+}
+.a_box p,.b_box p,.d_box p,.e_box p,.f_box p {
+	background: linear-gradient(to right,#FFDCFA,#CDECFF);
+	display: inline-block;
+	margin-left: 0;	
+	padding: 5px 10px;
+	font-size: 13px;
+}
+
+.b_box {
+	margin: 15px 15px 15px 15px;
+}
+.b_box img {
+	width: 200px;
+	padding: 40px 15px 20px 25px
+}
+.c_box {
+	margin: 15px 10px 15px 15px;
+}
+.c_box img {
+	width: 145px;
+	padding: 25px 0px 20px 55px;
+}
+.c_box p {
+	background: linear-gradient(to right,#FFDCFA,#CDECFF);
+	display: inline-block;
+	margin-left: 0;	
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-size: 13px;
+}
+.d_box {
+	margin: 15px 15px 15px 40px;
+}
+.d_box img {
+	width: 200px;
+	padding: 28px 15px 2px 25px;
+}
+.e_box {
+	margin: 15px 15px 15px 15px;
+}
+.e_box img {
+	width: 113px;
+	padding: 15px 25px 0px 70px
+}
+.f_box {
+	margin: 15px 15px 15px 15px;
+}
+.f_box img {
+	width: 113px;
+	padding: 15px 25px 0px 70px
+}
+
+.box {
+	display: flex;
+	margin-bottom: 50px;
+}
+.contact {
+	border-bottom: 1px solid #958C7E;
+	width: 50em;
+	color:#ffffff;
+	font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+	margin: 50px 60px 50px 30px;
+}
+#inquiry {
+	color:#ffffff;
+	font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+	margin: 50px 60px 50px 30px;
+}
+label {
+	color: #5f5f5f;
+    display: inline-block;
+	width: 150px;
+}
+input {
+	height: 35px;
+	width: 600px;
+	border: #C7B7A3;
+	background-color: transparent;
+	margin-left: 39px;
+}
+textarea {
+	height: 150px;
+	width: 500px;
+	background-color: transparent;
+	margin-top: 10px;
+}
+footer {
+	text-align: center;
+	padding-top: 100px;
+}
+/*しろくまコーヒー*/
+h4 {
+	font-size: 200%;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-style: normal;
+	color: #ffffff;
+	padding-left: 30px;
+}
+#hyousi {
+	display: flex;
+}
+#logonaiyou {
+		padding-left: 10px;
+		width: 400px;
+}
+.gaiyou {
+	line-height: 3;
+	margin-top: 0;
+}
+.point {
+	line-height: 1.6;
+}
+span {
+	padding-left: 130px;
+}
+#nakami {
+	display: flex;
+}
+#nakaminaiyou {
+	padding-left: 10px;
+	width: 400px;
+}
+#logo_box,#sirokumameisi_box {
+	width: 480px;
+	height: 310px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+	background-color: #F7F7F7;
+}
+#sirokuma_box img {
+	width: 380px;
+	margin: 40px 10px 20px 50px;
+}
+/*coffeecan*/
+#coffeecan_box img {
+	width: 250px;
+	margin: 30px 30px 30px 130px;
+}
+#sanfes_box img{
+	width: 350px;
+	margin: 30px 10px 20px 65px;
+}
+#ehon_box img {
+	width: 200px;
+	margin: 13px 10px 10px 140px;
+}
+#wing_box img {
+	width: 200px;
+	margin: 13px 10px 10px 140px;
+}
+.back a{
+	text-decoration: none;
+	color: #ffffff;
+}
+th {
+	width: 150px;
+	text-align: left;
+	vertical-align: top;
+	border-right: 1px dotted #6D5F4C;
+}
+tr{
+	height: 80px;
+}
+tr:last-child{
+	height: 60px;
+}
+table {
+	width: 80%;
+	margin-left: 30px;
+	color: #5f5f5f;
+}
+td {
+	vertical-align: top;
+	padding-left: 50px;
+}
+/* ハンバーガーアイコン */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  color: #674636;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 画面幅が狭いときのレスポンシブ対応 */
+@media screen and (max-width: 600px) {
+	.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #F6E7ED;
+    z-index: 998;
+    padding-top: 80px;
+  }
+	#main {
+		overflow-wrap: anywhere;
+		width: auto;
+	}
+	#container {
+		width: 100%;
+	}
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+	#profile_box {
+		max-width: 100%;
+	}
+	#contact_box {
+		max-width: 100%;
+		margin: 0;
+	}
+	.contact {
+		max-width: 100%;
+		margin: 0;
+	}
+	#message {
+		max-width: 100%;
+		margin: 0;
+	}
+	#container {
+		overflow: hidden;
+	}
+	h6 {
+		font-size: 80px;
+		margin-top: 250px;
+	}
+	.a_box  {
+		width: 310px;
+		margin-left: 20px;
+	}
+	.a_box img {
+		width: 80%;
+		padding: 30px 30px 20px 30px;
+	}
+	.a_box p {
+		margin-top: 15px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	.b_box {
+		width: 310px;
+		margin-top: 50px;
+	}
+	.b_box img {
+		width: 80%;
+		padding: 30px 30px 20px 35px;
+	}
+	.b_box p {
+		margin-top: 15px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	.c_box {
+		width: 310px;
+		margin-top: 50px;
+	}
+	.c_box img {
+		width: 159px;
+		padding: 20px 0px 20px 80px;
+	}
+	.c_box p {
+		margin-top: 3px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	.d_box {
+		width: 310px;
+		margin-top: 5px;
+		margin-left: 28px;
+	}
+	.d_box img {
+		width: 220px;
+		padding: 20px 0px 20px 45px;
+	}
+	.d_box p {
+		margin-top: 8px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	.e_box {
+		width: 310px;
+		margin-top: 50px;
+		margin-left: 28px;
+	}
+	.e_box img {
+		width: 120px;
+		padding: 15px 0px 20px 100px;
+	}
+	.e_box p {
+		margin-top: 8px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	.f_box {
+		width: 310px;
+		margin-top: 50px;
+		margin-left: 28px;
+	}
+	.f_box img {
+		width: 120px;
+		padding: 15px 0px 20px 100px;
+	}
+	.f_box p {
+		margin-top: 8px;
+		background: linear-gradient(to right,#FFDCFA,#CDECFF);
+    	display: inline-block;
+		font-size: 14px;
+	}
+	#hyousi,#nakami {
+    flex-direction: column;
+    align-items: center;
+  }
+  #sirokuma_box img {
+    width: 90%;
+    margin: 20px auto;
+  }
+	h4 {
+		font-size: 25px;
+	}
+	#logo_box,#sirokumameisi_box {
+		width: 400px;
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+	#logo,#sirokumameisi {
+		width: 350px;
+	}
+	#logo img {
+		padding-left: 45px;
+		padding-top: 30px;
+	}
+	#sirokumameisi {
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+	#logo2 img {
+		width: 330px;
+		 padding-left: 40px;
+		padding-top: 30px
+	}
+	#logo3 img{
+		width: 200px;
+		padding-right: 50px; 
+		padding-top: 20px;
+	}
+	#logo4 img{
+		width: 300px;
+		padding-top: 15px;
+	}
+	#logo5 img{
+		width: 200px;
+		padding-right: 50px;
+	}
+	#logo6 img{
+		width: 180px;
+		padding-top: 15px;
+	}
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #F6E7ED;
+    z-index: 998;
+    padding-top: 80px;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  div#container {
+    flex-direction: column;
+  }
+
+  #main {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  nav ul {
+    position: static;
+    margin: 0;
+    padding: 20px;
+  }
+
+  nav ul li {
+    padding: 15px 0;
+    font-size: 110%;
+  }
+}
